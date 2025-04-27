@@ -1,0 +1,304 @@
+body {
+    line-height: 1.6;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+h2,
+h3,
+h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 24px;
+    border-bottom: 2px solid #007bff;
+    color: black;
+}
+
+h3 {
+    font-size: 18px;
+    color: black;
+}
+
+h4 {
+    font-size: 15px;
+    color: black;
+}
+
+.flex-Container {
+    display: flex;
+    flex-wrap: wrap;
+    /* allows it to stack on small screens */
+    gap: 20px;
+    /* spacing between blocks */
+    justify-content: space-between;
+}
+
+.Dataset-Container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 1px solid rgb(160, 160, 160);
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(205, 205, 205, 0.716);
+    overflow-y: auto;
+    flex: 1;
+    min-width: 300px;
+}
+
+.Dataset-Container li {
+    background-color: #ffffff;
+    padding: 10px;
+    color: black;
+}
+
+.Alert-Container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 1px solid rgb(160, 160, 160);
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(205, 205, 205, 0.716);
+    overflow-y: auto;
+    flex: 2;
+    min-width: 300px;
+}
+
+.Alert-Container li {
+    background-color: #ffffff;
+    padding: 10px;
+    color: black;
+}
+
+.Drop-Container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 1px solid rgb(160, 160, 160);
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(205, 205, 205, 0.716);
+    overflow-y: auto;
+    flex: 1;
+    min-width: 300px;
+}
+
+.Drop-Container li {
+    background-color: #ffffff;
+    padding: 10px;
+    color: black;
+}
+
+.Group-Container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 1px solid rgb(160, 160, 160);
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(205, 205, 205, 0.716);
+    overflow-y: auto;
+    flex: 2;
+    min-width: 300px;
+}
+
+.Grid-Container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.group {
+    background-color: #fbfbfb;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(205, 205, 205, 0.716);
+}
+
+.group li{
+    background-color: #ffffff;
+    padding: 10px;
+    color: black;
+}
+
+.SubContainer {
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 1px solid rgb(160, 160, 160);
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(205, 205, 205, 0.716);
+    overflow-y: auto;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background-color: #ffffff;
+    border-bottom: 1px solid grey;
+    color: black;
+}
+
+.feature-name {
+    color: #27ae60;
+    font-weight: bold;
+}
+
+.alert-text {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.proceed-button {
+    border-radius: 25px;
+    color: #E4F2E6;
+    font-family: inherit;
+    font-size: 1rem;
+    border: none;
+}
+
+.button-container a button {
+    background-color: #5159fd;
+    padding: 8px 15px;
+}
+
+.button-container a button:hover {
+    background-color: #1b21b1;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+    width: 100%;
+}
+
+.general-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.scrollable-table{
+    border-collapse: collapse;
+    min-width: 1000px;
+    width: max-content;
+}
+
+.scrollable-table .sticky-col {
+    position: sticky;
+    left: 0;
+    z-index: 2;
+    background-color: #cdcdcd;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: left;
+    white-space: nowrap;
+}
+
+th {
+    background-color: #cdcdcd;
+    color: black;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: rgba(222, 222, 222, 0.716);
+}
+
+tr:hover {
+    background-color: rgba(199, 199, 199, 0.716)
+    ;
+}
+
+td {
+    color: black;
+}
+
+.missing-data-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 1px solid rgb(160, 160, 160);
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow:  0 4px 8px rgba(205, 205, 205, 0.716);
+}
+
+.missing-table,
+.missing-chart {
+    flex: 1;
+    min-width: 300px;
+}
+
+.missing-table table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.missing-chart {
+    text-align: center;
+    color: #F4F4F4;
+}
+
+/* Responsive Design */
+/* Add a horizontal scroll when needed */
+@media (max-width: 768px) {
+    .table-container {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        /* Smooth scrolling for mobile */
+    }
+}
+
+.graph-container {
+    position: relative;
+    text-align: left;
+    margin: 10px 0;
+}
+
+#dendrogram-container {
+    text-align: center;
+}
+
+.graph-container img {
+    max-width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.Summary-Container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid rgb(160, 160, 160);
+    border-radius: 20px;
+    color: black;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(205, 205, 205, 0.716);
+}
+
+.content-container {
+    overflow-wrap: break-word;
+    overflow-y: auto;
+}
+
