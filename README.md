@@ -12,3 +12,4 @@
     - python -m spacy download en_core_web_sm<br>
 4. Open Visual Studio Code and open downloaded folder<br>
 5. Open app.py and right click run python -> run oython file in terminal<br>
+6. Click the address used to access a web application running on your local machine in terminal
