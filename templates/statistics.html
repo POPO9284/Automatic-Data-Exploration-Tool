@@ -10,8 +10,20 @@
 
     <!-- Alert Box -->
     {% if alert %}
+    {% set has_alerts = false %}
     <div class="Alert-Container">
         <h2 class="alert-text">Alert</h2>
+
+        {% if alert["Missing Features"] %}{% set has_alerts = true %}{% endif %}
+        {% if alert["Zero Features"] %}{% set has_alerts = true %}{% endif %}
+        {% if alert["Unique Features"] %}{% set has_alerts = true %}{% endif %}
+        {% if alert["Duplicate Rows"] %}{% set has_alerts = true %}{% endif %}
+        {% if alert["Imbalanced Features"] %}{% set has_alerts = true %}{% endif %}
+        {% if alert["Highly Skewed Features"] %}{% set has_alerts = true %}{% endif %}
+        {% if alert["Highly Correlated Features"] %}{% set has_alerts = true %}{% endif %}
+        {% if alert["Uniform Features"] %}{% set has_alerts = true %}{% endif %}
+
+        {% if has_alerts %}
         <ul>
             {% if alert["Missing Features"] %}
             {% for feature, details in alert["Missing Features"].items() %}
@@ -87,6 +99,12 @@
             {% endfor %}
             {% endif %}
         </ul>
+
+        {% else %}
+        <ul>
+            <li>No data issues detected.</li>
+        </ul>
+        {% endif %}
     </div>
     {% endif %}
 
@@ -432,7 +450,7 @@
             </table>
             {% endif %}
 
-            {% if var_name in bigrams %}
+            {% if var_name in bigrams and bigrams[var_name] %}
             <h4>Top 10 Most Common Two-word</h4>
             <table border="1" class="general-table">
                 <tr>
@@ -448,7 +466,7 @@
             </table>
             {% endif %}
 
-            {% if var_name in trigrams %}
+            {% if var_name in trigrams and trigrams[var_name] %}
             <h4>Top 10 Most Common Three-word</h4>
             <table border="1" class="general-table">
                 <tr>
